@@ -45,3 +45,8 @@ Follow the below given instructions:
 
 7. Click o `Compute TF-IDF score` button and enter the string and search the documents based on TF-IDF score. The UI would appear like:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/tf-idf%20compute.png)
+
+*All the user interface tasks can be executed on command line as well.* Run `client.py` from command line to upload files and pass user input string (from command line) to compute TF-IDF scores w.r.t. each files present in the server. 
+
+1. Make sure server is running.
+2. Run `python client.py`. You could follow the instructions given on the command line to upload the file(s) and input string.
