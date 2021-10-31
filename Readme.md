@@ -43,5 +43,5 @@ Follow the below given instructions:
 6. Files that gets uploaded would be shown as below once upload is complete and you would be returned to homepage:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload%20done.png)
 
-7. Click o `Compute TF-IDF score` button and enter the string and search the documents based on TF-IDF score. The UI would appear like below:
+7. Click o `Compute TF-IDF score` button and enter the string and search the documents based on TF-IDF score. The UI would appear like:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/tf-idf%20compute.png)
