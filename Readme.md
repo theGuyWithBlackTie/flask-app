@@ -63,4 +63,14 @@ There are 6 test cases written which test different file uploading scenarios and
 
 ### Architecture
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/architecture.png)
-On starting the server, cache gets initialized with the file content if there are files present in the server. Cache stores term frequency of each word by each filewise which would help the in faster computing of TF-IDF scores. 
+On starting the server, cache gets initialized with the file content if there are files present in the server. Cache stores term frequency of each word by each filewise which would help the in faster computing of TF-IDF scores.
+
+### Business Logic
+1. File Allowed to be uploaded
+As to compute TF-IDF text is required, the server only allows to upload text file with .txt extensions only. User can select files with any extensions while uploading and server backend would take care of correct files to get uploaded.
+
+2. User Authorization
+To keep it simple and allow the user to compute the TF-IDF, no user authorization is required.
+
+3. Notifying users about the operations result.
+The user is notified about the operation being succesfull or not. When files are uploaded, list of files successfully uploaded are shown. When, input string is not provided for TF-IDF computation, same is notified to the user. Similarly, when there are no files in server and TF-IDF request is made, user is notified ad asked to upload files.
