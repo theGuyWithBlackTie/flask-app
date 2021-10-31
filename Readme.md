@@ -32,3 +32,9 @@ Follow the below given instructions:
 2. Now, we need to start the server which would accept the file uploads and compute the tf-idf scores. To start the server, run `python run_server.py`. The server will start on `http://127.0.0.1:5000/` by default. Copy this link and open in any of the browser.
 3. Home user interface would look like this:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/home.png)
+4. You could upload the images by clicking on **Upload File(s)** button or you can compute theTF-IDF search by clicking on **Compute TF-IDF score**. Important point to note is, no TF-IDF will be computed if files are not present in the server.
+5. Files upload UI looks like the following:
+![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload.png)
+Click on `Choose Files`, and select one or more files to be uploaded, and click `OK`.  **Server only accepts *.txt* extension files. Files that are not text files (or .txt) will not be uploaded.**
+6. Files that gets uploaded would be shown as below once upload is complete:
+![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload%done.png)
