@@ -37,4 +37,4 @@ Follow the below given instructions:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload.png)
 Click on `Choose Files`, and select one or more files to be uploaded, and click `OK`.  **Server only accepts *.txt* extension files. Files that are not text files (or .txt) will not be uploaded.**
 6. Files that gets uploaded would be shown as below once upload is complete:
-![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload%done.png)
+![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload%20done.png)
