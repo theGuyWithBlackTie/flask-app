@@ -49,4 +49,6 @@ Follow the below given instructions:
 *All the user interface tasks can be executed on command line as well.* Run `client.py` from command line to upload files and pass user input string (from command line) to compute TF-IDF scores w.r.t. each files present in the server. 
 
 1. Make sure server is running.
-2. Run `python client.py`. You could follow the instructions given on the command line to upload the file(s) and input string.
+2. Run `python client.py`. You could follow the instructions given on the command line to upload the file(s) and input string. On running `client.py`, you would get following options on command line:
+![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/client%20options.png)
+3. Enter `1` to upload whole directory or specific file and `2` to input string and get TF-IDF score.
