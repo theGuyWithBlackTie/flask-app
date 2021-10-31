@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TF-IDF</title>
+    </head>
+    <body>
+        {% for key in results %}
+            <p><h5>{{key}}</h5>{{results.get(key)}}</p>
+            
+        {% endfor %}
+        {% if info%}
+            <h5>{{ info }}</h5>
+        {% endif %}
+        <form method="post" action="/tf-idf">
+            <p> Enter text: <input type="text" name="text_field"/></p>
+            <input type="submit" value="Compute TF-IDF Score" name="compute"/>
+            <input type="submit" value="Back" name="back">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+        {% if info %}
+            <h5>{{ info }}</h5>
+        {% endif %}
+        <form method="post" action="/action">
+            <button type="submit" name="file_upload" value="file_upload">Upload Files(s)</button>
+            <button type="submit" name="tf_idf" value="tf_idf">Compute TF-IDF score</button>
+        </form>
+    </body>
+</html>
