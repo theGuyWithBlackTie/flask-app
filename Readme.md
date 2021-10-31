@@ -3,6 +3,7 @@ This repository contains flask framework based app which lets user to upload the
 To download all other packages, run `pip install requirements.txt`
 
 ### How to use?
+#### User Interface
 Initally, download the code in zip format and extract all the contents. After extracting, the file structure would look like this:
 ```
 root
@@ -46,9 +47,16 @@ Follow the below given instructions:
 7. Click o `Compute TF-IDF score` button and enter the string and search the documents based on TF-IDF score. The UI would appear like:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/tf-idf%20compute.png)
 
+#### Command Line Interface
 *All the user interface tasks can be executed on command line as well.* Run `client.py` from command line to upload files and pass user input string (from command line) to compute TF-IDF scores w.r.t. each files present in the server. 
 
 1. Make sure server is running.
 2. Run `python client.py`. You could follow the instructions given on the command line to upload the file(s) and input string. On running `client.py`, you would get following options on command line:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/client%20options.png)
-3. Enter `1` to upload whole directory or specific file and `2` to input string and get TF-IDF score.
+3. Enter `1` to upload whole directory or specific file and `2` to input string and get TF-IDF score. `Ctrl-C` or random input to exit the command line interface.
+4. Enter complete directory path to upload all the files in the directory. Directories inside the directory will be ignored. You can also enter complete file path to upload one specific file.
+
+
+#### Test Cases
+There are 6 test cases written which test different file uploading scenarios and TF-IDF. From `root` directory, run following command:
+`python -m pytest test`
