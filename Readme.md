@@ -40,5 +40,8 @@ Follow the below given instructions:
 5. Files upload UI looks like the following. Click on `Choose Files`, and select one or more files to be uploaded, and click `OK`.  **Server only accepts *.txt* extension files. Files that are not text files (or .txt) will not be uploaded.**
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload.png)
 
-6. Files that gets uploaded would be shown as below once upload is complete:
+6. Files that gets uploaded would be shown as below once upload is complete and you would be returned to homepage:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload%20done.png)
+
+7. Click o `Compute TF-IDF score` button and enter the string and search the documents based on TF-IDF score. The UI would appear like below:
+![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/tf-idf%20compute.png)
