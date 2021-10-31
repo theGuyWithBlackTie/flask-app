@@ -36,7 +36,7 @@ Follow the below given instructions:
 3. Home user interface would look like this:
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/home.png)
 
-4. You could upload the images by clicking on **Upload File(s)** button or you can compute theTF-IDF search by clicking on **Compute TF-IDF score**. Important point to note is, no TF-IDF will be computed if files are not present in the server.
+4. You could upload the images by clicking on **Upload File(s)** button or you can compute theTF-IDF search by clicking on **Compute TF-IDF score**. Important point to note is, no TF-IDF will be computed if files are not present in the server. The files are stored in `storage` directory. 
 
 5. Files upload UI looks like the following. Click on `Choose Files`, and select one or more files to be uploaded, and click `OK`.  **Server only accepts *.txt* extension files. Files that are not text files (or .txt) will not be uploaded.**
 ![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/file%20upload.png)
@@ -58,5 +58,9 @@ Follow the below given instructions:
 
 
 #### Test Cases
-There are 6 test cases written which test different file uploading scenarios and TF-IDF. From `root` directory, run following command:
+There are 6 test cases written which test different file uploading scenarios and TF-IDF. Test files are kept in `test` directory From `root` directory, run following command:
 `python -m pytest test`
+
+### Architecture
+![](https://github.com/theGuyWithBlackTie/flask-app/blob/main/images/architecture.png)
+On starting the server, cache gets initialized with the file content if there are files present in the server. Cache stores term frequency of each word by each filewise which would help the in faster computing of TF-IDF scores. 
